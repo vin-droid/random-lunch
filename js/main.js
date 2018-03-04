@@ -39,7 +39,7 @@ function randNum(){
 function setRandomImage(element, currentIndex, lastIndex){
 	randomPointer = wieghtedLevels[Math.floor(Math.random() * 100)]
 	element.style.opacity = '0.1';
-	element.setAttribute('src', "image"+ randomPointer +".jpg");
+	element.setAttribute('src', "images/"+"image"+ randomPointer +".jpg");
 	if (currentIndex == lastIndex){
 		element.onclick = imageClickHandler;
 		element.style.opacity = '1';
